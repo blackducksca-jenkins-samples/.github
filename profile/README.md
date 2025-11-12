@@ -1,16 +1,15 @@
 # Black Duck SCA Samples                                                                                                                                                                                                                          
 ## Table of Contents
 - [Overview](#overview)
-- [Workflows using Black Duck Security Scan Plugin](#workflows-using-black-duck-security-scan-plugin)
-- [Workflows using Bridge CLI](#workflows-using-bridge-cli)
+- [Workflows using Plugin](#workflows-using-black-duck-security-scan-plugin)
 - [Helpful Links](#helpful-links)                                                                                                                                                                                                                                                   
 
 ## Overview
 Live, executable samples using the Black Duck Security Scan Plugin with Black Duck SCA                                                                                                                                                         
                                                                                                                                                                                                                                                    
-## Workflows using Black Duck Security Scan Plugin                                                                                                                                                                                                                               
+## Workflows using Plugin                                                                                                                                                                                                                               
                                                                                                                                                                                                                                                    
-| How To? | Details | Jenkinsfile | Scan Results |                                                                                                                                                                
+| How To? | Details | Jenkinsfile | Results |                                                                                                                                                                
 |---------|-------------|---------------|---------------------|                                                                                                                                                               
 | [**Scan repository with build as a pre-step (Recommended)**](https://github.com/blackducksca-jenkins-samples/full-scan) | This recommended method ensures SAST analysis on compiled code and artifacts through a pre-build step for comprehensive vulnerability detection | [Jenkinsfile](https://github.com/blackducksca-jenkins-samples/full-scan/blob/main/nodejs-npm/Jenkinsfile) |[Results](https://github.com/blackducksca-jenkins-samples/full-scan/blob/main/jenkins-logs/latest-execution.md) |
 | [**Scan repository in an environment where build is not an option**](https://github.com/blackducksca-jenkins-samples/buildless-scan) | This option is less accurate and should be used when you can’t build your repository | [Jenkinsfile](https://github.com/blackducksca-jenkins-samples/buildless-scan/blob/main/nodejs-npm/Jenkinsfile) | [Results](https://github.com/blackducksca-jenkins-samples/buildless-scan/blob/main/jenkins-logs/latest-execution.md) |
@@ -21,11 +20,6 @@ Live, executable samples using the Black Duck Security Scan Plugin with Black Du
 | [**Passing Detect tool arguments from Black Duck Sca scans**](https://github.com/blackducksca-jenkins-samples/arbitrary-params) | To leverage advanced SCA features, you need to pass options to Detect. This sample shows how you can configure Detect options |  [Jenkinsfile](https://github.com/blackducksca-jenkins-samples/arbitrary-params/blob/main/nodejs-npm/Jenkinsfile) | [Results](https://github.com/blackducksca-jenkins-samples/arbitrary-params/blob/main/jenkins-logs/latest-execution.md) |                                                                           
 | [**Run scans asynchronously to avoid holding up the pipeline during scanning**](https://github.com/blackducksca-jenkins-samples/async-mode) | By default, the pipeline is held until the scan finishes. You can configure the workflow in such a way where the pipeline doesn’t wait for the scan to finish and returns immediately after kicking off the scan. Note that post scan options are not triggered when you choose to not wait for the scan to finish | [Jenkinsfile](https://github.com/blackducksca-jenkins-samples/async-mode/blob/main/nodejs-npm/Jenkinsfile) | [Results](https://github.com/blackducksca-jenkins-samples/async-mode/blob/main/jenkins-logs/latest-execution.md) |
 
-## Workflows using Bridge CLI
-| How To? | Details | Workflow File | Scan Results |
-|---------|---------|---------------|--------------|
-| [**Scan repository with build as a pre-step (Recommended)**](https://github.com/blackducksca-jenkins-samples/bridgecli) | This recommended method ensures SAST analysis on compiled code and artifacts through a pre-build step for comprehensive vulnerability detection | [Workflow](https://github.com/blackducksca-workflow-samples/bridgecli/blob/main/.github/workflows/BlackduckSCA_Bridge.yml) | [Results](https://blackducksca-workflow-samples.github.io/bridgecli/) |
-                                                                          
-                                                                                                                                                                                                                                                   
-## Helpful Links                                                                                                                                                                                                                         
+                                                   
+## Documentation                                                                                                                                                                                                                        
 [Using the Black Duck Security Scan Plugin with Black Duck SCA](https://documentation.blackduck.com/bundle/bridge/page/documentation/security_scan_for_black_duck.html)
