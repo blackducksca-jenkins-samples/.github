@@ -1,14 +1,13 @@
 # Black Duck SCA Samples                                                                                                                                                                                                                          
 ## Table of Contents
 - [Overview](#overview)
-- [Workflows using Plugin](#workflows-using-black-duck-security-scan-plugin)
+- [Workflow Samples using Plugin](#workflow-samples-using-plugin)
 - [Helpful Links](#helpful-links)                                                                                                                                                                                                                                                   
 
 ## Overview
 Live, executable samples using the Black Duck Security Scan Plugin with Black Duck SCA                                                                                                                                                         
                                                                                                                                                                                                                                                    
-## Workflows using Plugin                                                                                                                                                                                                                               
-                                                                                                                                                                                                                                                   
+## Workflow Samples using Plugin                                                                                                                                                                                                                                                                                                                                                                                                                   
 | How To? | Details | Jenkinsfile | Results |                                                                                                                                                                
 |---------|-------------|---------------|---------------------|                                                                                                                                                               
 | [**Scan repository with build as a pre-step (Recommended)**](https://github.com/blackducksca-jenkins-samples/full-scan) | This recommended method ensures SAST analysis on compiled code and artifacts through a pre-build step for comprehensive vulnerability detection | [Jenkinsfile](https://github.com/blackducksca-jenkins-samples/full-scan/blob/main/nodejs-npm/Jenkinsfile) |[Results](https://github.com/blackducksca-jenkins-samples/full-scan/blob/main/jenkins-logs/latest-execution.md) |
